@@ -12,5 +12,11 @@ LOCAL_CERTIFICATE := superuser
 
 include $(BUILD_PACKAGE)
 
+# modify for otter for now...until Calc app works again
+include $(CLEAR_VARS)
+
+LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := libarity:libs/arity-2.1.6.jar
+
+include $(BUILD_MULTI_PREBUILT)
 ##
 
